@@ -12,44 +12,37 @@
       color: white;
     }
 
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    header img {
-      max-width: 180px;
-      height: auto;
-    }
-
     .section {
       padding: 20px;
       max-width: 700px;
       margin: auto;
     }
 
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     h1, h2 {
       color: #d4af37;
-    }
-
-    h1 {
-      font-size: 2.2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      margin-top: 30px;
+      text-align: center;
     }
 
     p {
-      line-height: 1.6;
       font-size: 1em;
+      line-height: 1.6;
+      text-align: center;
     }
 
-    .full-img {
-      width: 100%;
-      border-radius: 8px;
-      margin: 20px 0;
+    .follow-section {
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    .follow-section img {
+      max-width: 300px;
+      margin: 20px auto;
     }
 
     .contact-button {
@@ -67,32 +60,29 @@
       z-index: 999;
       box-shadow: 0 0 10px #000;
     }
+    .contact-button:hover {
+      background-color: #c39c2c;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="img/logo.png" alt="Logo" />
-  </header>
+  <img src="img/logo.png" alt="Logo" />
+  <img src="img/header.jpg" alt="Header" />
+  <img src="img/preisliste.png" alt="Preisliste" />
+  <img src="img/team.jpg" alt="Team" />
+  <img src="img/interior.jpg" alt="Salon Innenraum" />
 
-  <img src="img/header.jpg" alt="Header" class="full-img" />
-
-  <div class="section">
-    <h1>Willkommen bei ROJ Barber Shop</h1>
-    <p>Ihr Friseursalon in Ulmen<br>
-    Tauchen Sie ein in die Welt des perfekten Stylings. Ob klassischer Herrenhaarschnitt, stilvolle Damenfrisur oder präzise Bartpflege – bei uns sind Sie in den besten Händen. Unser Team aus erfahrenen Friseuren kümmert sich mit Leidenschaft um Ihr Aussehen.</p>
-
-    <h2>ÜBER UNS</h2>
-    <p>Tradition trifft auf Stil<br>
-    ROJ Barber Shop steht für Qualität, Präzision und moderne Looks.</p>
+  <div class="follow-section">
+    <img src="img/follow.png" alt="Follow Us" />
+    <p>Bleiben Sie auf dem Laufenden über unsere neuesten Styles und Angebote:</p>
+    <img src="img/instagram.png" alt="Instagram" />
+    <p>@rojbarber.shop</p>
+    <p style="font-size: 0.9em; color: #ccc;">© 2025 <strong style="color:#d4af37;">Roj Barber Shop</strong> – Ihr Barbershop mit Stil. Made with <span style="color: red;">♥</span> in Germany.</p>
   </div>
 
-  <img src="img/preisliste.png" alt="Preisliste" class="full-img" />
-  <img src="img/team.jpg" alt="Team" class="full-img" />
-  <img src="img/interior.jpg" alt="Salon Innenraum" class="full-img" />
-
   <button class="contact-button" onclick="window.location.href='tel:+4926769513977'">
-    Kontakt aufnehmen
+    Jetzt anrufen
   </button>
 
 </body>
