@@ -9,10 +9,12 @@
       margin: 0;
       background-color: #000;
     }
-    img {
+    .responsive-img {
       width: 100%;
+      max-width: 600px;
       height: auto;
       display: block;
+      margin: 0 auto 20px;
     }
     .contact-button {
       position: fixed;
@@ -36,11 +38,11 @@
 </head>
 <body>
 
-  <img src="img/header.jpg" alt="Header" />
-  <img src="img/interior.jpg" alt="Salon Innenraum" />
-  <img src="img/team.jpg" alt="Team" />
-  <img src="img/preisliste.png" alt="Preisliste" />
-  <img src="img/logo.png" alt="Logo" />
+  <img src="img/logo.png" alt="Logo" class="responsive-img" />
+  <img src="img/header.jpg" alt="Header" class="responsive-img" />
+  <img src="img/preisliste.png" alt="Preisliste" class="responsive-img" />
+  <img src="img/team.jpg" alt="Team" class="responsive-img" />
+  <img src="img/interior.jpg" alt="Salon Innenraum" class="responsive-img" />
 
   <button class="contact-button" onclick="window.location.href='tel:+4926769513977'">
     Kontakt aufnehmen
