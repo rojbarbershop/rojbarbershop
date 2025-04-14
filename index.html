@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ROJ Barber Shop</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    img.full-width {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .contact-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ffd700;
+      color: #000;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    .contact-button:hover {
+      background-color: #e6c200;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="img/header.png" alt="ROJ Barber Shop" class="full-width">
+  <img src="img/footer.png" alt="Instagram Kontakt" class="full-width">
+
+  <button class="contact-button" onclick="window.location.href='tel:+4926769513977'">
+    Jetzt anrufen
+  </button>
+
+</body>
+</html>
