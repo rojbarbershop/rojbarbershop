@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -8,142 +7,44 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
     }
-    h1, h2, h3 {
-      color: #d4af37;
-      margin-top: 0.5em;
-    }
-    h1 {
-      font-size: 2.5em;
-      text-transform: uppercase;
-    }
-    h2 {
-      font-size: 1.8em;
-      text-transform: uppercase;
-      margin-top: 1.5em;
-    }
-    h3 {
-      font-size: 1.3em;
-      margin-top: 1em;
-    }
-    p {
-      font-size: 1em;
-      margin: 0.5em 0;
-    }
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1em 0;
-    }
-    .flex-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .flex-row img {
-      max-width: 48%;
+    img {
+      width: 100%;
       height: auto;
-      border-radius: 4px;
+      display: block;
     }
-    .flex-row.reverse {
-      flex-direction: row-reverse;
+    .contact-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #d4af37;
+      color: black;
+      padding: 12px 18px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 999;
+      box-shadow: 0 0 10px #000;
     }
-    .reviews {
-      font-style: italic;
-      margin: 0.5em 0;
-    }
-    footer {
-      text-align: center;
-      padding: 1em 0;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    @media (max-width: 768px) {
-      .flex-row {
-        flex-direction: column;
-      }
-      .flex-row img, .flex-row .text {
-        max-width: 100%;
-      }
-      h1 {
-        font-size: 2em;
-      }
-      h2 {
-        font-size: 1.5em;
-      }
+    .contact-button:hover {
+      background-color: #c39c2c;
     }
   </style>
 </head>
 <body>
 
-  <header class="container">
-    <img id="logo" src="img/logo.png" alt="ROJ Barber Shop Logo" style="height:80px;" />
-    <h1>Willkommen bei ROJ Barber Shop</h1>
-    <p><em>Ihr Friseursalon in Ulmen</em></p>
-  </header>
+  <img src="img/header.jpg" alt="Header" />
+  <img src="img/interior.jpg" alt="Salon Innenraum" />
+  <img src="img/team.jpg" alt="Team" />
+  <img src="img/preisliste.png" alt="Preisliste" />
+  <img src="img/logo.png" alt="Logo" />
 
-  <section class="container flex-row">
-    <img src="img/header.jpg" alt="Barber at work" />
-    <div class="text" style="max-width:48%;">
-      <h2>Über uns</h2>
-      <p><strong>Tradition trifft auf Stil</strong></p>
-      <p>ROJ Barber Shop steht für Qualität, Präzision und moderne Looks. Unser Ziel ist es, jedem Kunden ein besonderes Erlebnis zu bieten – mit persönlicher Beratung, einem entspannten Ambiente und einem perfekten Ergebnis. Wir nehmen uns Zeit für Sie – weil Ihr Stil unsere Leidenschaft ist.</p>
-    </div>
-  </section>
-
-  <section class="container flex-row">
-    <img src="img/team.jpg" alt="Team im Barbershop" />
-    <div class="text" style="max-width:48%;">
-      <p>Tauchen Sie ein in die Welt des perfekten Stylings. Ob klassischer Herrenhaarschnitt, stilvolle Damenfrisur oder präzise Bartpflege – bei uns sind Sie in den besten Händen. Unser Team aus erfahrenen Friseuren kümmert sich mit Leidenschaft um Ihr Aussehen.</p>
-    </div>
-  </section>
-
-  <section class="container">
-    <h2>Preisliste - Unsere Leistungen</h2>
-    <p><img src="img/preisliste.png" alt="Preisliste" style="max-width:100%; height:auto; border: 2px solid #555;" /></p>
-  </section>
-
-  <section class="container flex-row reverse">
-    <div class="text" style="max-width:48%;">
-      <h2>Kontakt & Anfahrt</h2>
-      <p><strong>Tel:</strong> (+49) 02676 9513977<br>
-         <strong>Email:</strong> rojbarbershop@gmx.de<br>
-         <strong>Adresse:</strong> Bahnhofstraße 44, 56766 Ulmen
-      </p>
-      <h3>Öffnungszeiten</h3>
-      <p>Montag – Freitag: 09:00 – 18:30 Uhr<br>
-         Samstag: 09:00 – 17:00 Uhr<br>
-         Sonntag: Geschlossen
-      </p>
-      <h3>Besonderheiten unseres Salons</h3>
-      <ul>
-        <li>Kein Termin nötig – Kommen Sie einfach spontan vorbei – wir sind jederzeit für Sie da!</li>
-        <li>Parkplätze direkt vor dem Salon – Bequem parken direkt gegenüber – stressfrei und ohne lange Wege.</li>
-      </ul>
-    </div>
-    <img src="img/interior.jpg" alt="Salon Innenraum" />
-  </section>
-
-  <section class="container">
-    <h2>Kundenbewertungen</h2>
-    <p><strong>922 Kundenbewertungen</strong> – ★ 5.0 von 5 Sternen</p>
-    <p class="reviews">"Bester Friseur in der Gegend! Sehr freundlich, immer zufrieden."</p>
-    <p class="reviews">"Super Haarschnitt, moderne Einrichtung und keine langen Wartezeiten! Komme regelmäßig hierher – top Service jedes Mal."</p>
-    <p>Bleiben Sie auf dem Laufenden über unsere neuesten Styles und Angebote: 
-      <a href="https://www.instagram.com/rojbarber.shop" target="_blank" style="color: #d4af37; text-decoration: none;"><strong>@rojbarber.shop</strong></a>
-    </p>
-  </section>
-
-  <footer>
-    © 2025 ROJ Barber Shop – Ihr Barbershop mit Stil. Made with ♥ in Germany.
-  </footer>
+  <button class="contact-button" onclick="window.location.href='tel:+4926769513977'">
+    Kontakt aufnehmen
+  </button>
 
 </body>
 </html>
