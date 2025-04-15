@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roj Barber Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+    }
+    .fixed-buttons {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      z-index: 999;
+    }
+    .fixed-buttons a {
+      background: #d4af37;
+      color: #000;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .phone-icon {
+      position: fixed;
+      bottom: 80px;
+      right: 10px;
+      width: 40px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Willkommen bei Roj Barber Shop</h1>
+</header>
+
+<main>
+  <img src="img/header.jpg" alt="Header Bild" />
+  <img src="img/team.jpg" alt="Team Bild" />
+  <img src="img/preisliste.png" alt="Preisliste" />
+  <img src="img/interior.jpg" alt="Interior" />
+  <img src="img/followus.jpg" alt="Follow Us" />
+</main>
+
+<footer>
+  <p>© 2025 Roj Barber Shop – Ihr Barbershop mit Stil. Made with ❤️ in Germany.</p>
+  <p>Kontakt: <a href="tel:+4926769513977">+49 2676 9513977</a> | 
+     <a href="mailto:rojbarbershop@gmx.de">rojbarbershop@gmx.de</a><br>
+     Adresse: Bahnhofstraße 44, 56766 Ulmen</p>
+</footer>
+
+<img src="img/phone-icon-yellow.png" alt="Anrufen" class="phone-icon" onclick="window.location.href='tel:+4926769513977'" />
+
+<div class="fixed-buttons">
+  <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">ohne Termin</a>
+  <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Jetzt besuchen</a>
+</div>
+
+</body>
+</html>
