@@ -1,103 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roj Barber Shop</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #1b1b1b;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .footer-buttons {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #000;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 10px 0;
-            z-index: 1000;
-        }
-        .footer-buttons a {
-            padding: 10px 16px;
-            background-color: #f2c400;
-            color: black;
-            border-radius: 30px;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        nav {
-            background-color: #111;
-            padding: 10px;
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            z-index: 1000;
-        }
-        nav a {
-            color: #ffcc00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            background-color: #111;
-            padding: 20px 10px 60px;
-        }
-        footer a {
-            color: #ffcc00;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roj Barber Shop</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #1b1b1b;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .nav-bar {
+      background-color: #111;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .nav-bar a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-buttons {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .footer-buttons a {
+      padding: 10px 16px;
+      background-color: #f2c400;
+      color: black;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .call-button {
+      position: fixed;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #f2c400;
+      color: black;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 2000;
+    }
+
+    .call-button img {
+      width: 18px;
+      height: 18px;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px 10px 60px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <a href="tel:+4926769513977">Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Ohne Termin</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Jetzt besuchen</a>
-    </nav>
+  <!-- زر الاتصال الثابت في الجانب الأيمن -->
+  <a href="tel:+4926769513977" class="call-button">
+    <img src="img/phone-icon-yellow.png" alt="Call Icon">+49 2676 9513977
+  </a>
 
-    <div class="image-gallery">
-        <img src="img/1.png" alt="1.png" />
-        <img src="img/2.png" alt="2.png" />
-        <img src="img/3.png" alt="3.png" />
-        <img src="img/4.png" alt="4.png" />
-        <img src="img/5.png" alt="5.png" />
-        <img src="img/6.png" alt="6.png" />
-        <img src="img/7.png" alt="7.png" />
-        <img src="img/8.png" alt="8.png" />
-        <img src="img/9.png" alt="9.png" />
-        <img src="img/10.png" alt="10.png" />
+  <nav class="nav-bar">
+    <a href="tel:+4926769513977">Jetzt anrufen</a>
+    <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Ohne Termin</a>
+    <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Zum Standort</a>
+  </nav>
 
-    </div>
+  <div class="image-gallery">
+    <img src="img/1.png" alt="1" />
+    <img src="img/2.png" alt="2" />
+    <img src="img/3.png" alt="3" />
+    <img src="img/4.png" alt="4" />
+    <img src="img/5.png" alt="5" />
+    <img src="img/6.png" alt="6" />
+    <img src="img/7.png" alt="7" />
+    <img src="img/8.png" alt="8" />
+    <img src="img/9.png" alt="9" />
+    <img src="img/10.png" alt="10" />
+  </div>
 
-    <div class="footer-buttons">
-        <a href="tel:+4926769513977">📞 Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">📍 Ohne Termin</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">📌 Jetzt besuchen</a>
-    </div>
+  <!-- أزرار سفلية -->
+  <div class="footer-buttons">
+    <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Ohne Termin</a>
+    <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Zum Standort</a>
+  </div>
 
-    <footer>
-        <p>© 2025 Roj Barber Shop</p>
-        <a href="tel:+4926769513977">Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Jetzt besuchen</a>
-    </footer>
+  <footer>
+    <p>© 2025 Roj Barber Shop</p>
+    <a href="tel:+4926769513977">Jetzt anrufen</a>
+    <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Zum Standort</a>
+  </footer>
 
 </body>
 </html>
