@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -63,14 +62,25 @@
             margin: 0 10px;
             font-weight: bold;
         }
+        .call-icon {
+            position: fixed;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2000;
+        }
+        .call-icon img {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
 
     <nav>
         <a href="tel:+4926769513977">Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Ohne Termin</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Jetzt besuchen</a>
+        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8" target="_blank">Ohne Termin</a>
+        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8" target="_blank">Zum Standort</a>
     </nav>
 
     <div class="image-gallery">
@@ -84,19 +94,23 @@
         <img src="img/8.png" alt="8.png" />
         <img src="img/9.png" alt="9.png" />
         <img src="img/10.png" alt="10.png" />
+    </div>
 
+    <div class="call-icon">
+        <a href="tel:+4926769513977">
+            <img src="img/phone-icon-yellow.png" alt="Anrufen">
+        </a>
     </div>
 
     <div class="footer-buttons">
-        <a href="tel:+4926769513977">📞 Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">📍 Ohne Termin</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">📌 Jetzt besuchen</a>
+        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8" target="_blank">Ohne Termin</a>
+        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8" target="_blank">Zum Standort</a>
     </div>
 
     <footer>
         <p>© 2025 Roj Barber Shop</p>
         <a href="tel:+4926769513977">Jetzt anrufen</a>
-        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8?g_st=com.google.maps.preview.copy" target="_blank">Jetzt besuchen</a>
+        <a href="https://maps.app.goo.gl/djTGQBwpUouYr5gb8" target="_blank">Zum Standort</a>
     </footer>
 
 </body>
