@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://rojbarbershop.github.io/roj/sitemap.xml
