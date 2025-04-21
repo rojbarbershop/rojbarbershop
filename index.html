@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roj Barber Shop</title>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4LQSVGMYKE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4LQSVGMYKE');
+</script>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #1b1b1b;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .menu {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1100;
+    }
+    .menu-icon {
+      font-size: 30px;
+      cursor: pointer;
+      color: #f2c400;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1001;
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #f2c400;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      font-size: 36px;
+    }
+    .call-icon {
+      position: fixed;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      z-index: 1000;
+    }
+    .call-icon img {
+      width: 100%;
+    }
+    .top-buttons {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #111;
+      z-index: 999;
+      padding: 10px 0;
+    }
+    .top-buttons a {
+      color: #f2c400;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .bottom-buttons {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #f2c400;
+      z-index: 999;
+      padding: 10px 0;
+    }
+    .bottom-buttons a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    h2 { color: #f2c400; }
+    a { color: #f2c400; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<div class="menu">
+  <span class="menu-icon" onclick="openNav()">&#9776;</span>
+</div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="tel:+4926769513977">Kontakt</a>
+  <a href="#zeiten">Öffnungszeiten</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Adresse</a>
+  <a href="blog/blog-1.html">Blog: Herrenhaarschnitte</a>
+  <a href="blog/blog-2.html">Blog: Bartpflege</a>
+  <a href="blog/blog-3.html">Blog: Kundenmeinungen</a>
+</div>
+
+<div class="top-buttons">
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Ohne Termin</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Zum Standort</a>
+</div>
+
+<div class="call-icon">
+  <a href="tel:+4926769513977">
+    <img src="img/phone-icon.png" alt="Anrufen" />
+  </a>
+</div>
+
+<div style="padding: 120px 20px 80px;">
+  <h1>Willkommen bei Roj Barber Shop</h1>
+  <p>Bahnhofstraße 44, 56766 Ulmen</p>
+  <h2 id="zeiten">Unsere Öffnungszeiten</h2>
+  <p>Mo - Freitag: 09:00 - 18:30<br>Samstags: 09:00 - 17:00<br>Sonntags: Geschlossen</p>
+</div>
+
+<div class="bottom-buttons">
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Ohne Termin</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Zum Standort</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+</script>
+
+</body>
+</html>
