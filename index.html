@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roj Barber Shop</title>
+  <meta name="description" content="Professioneller Barbershop in Ulmen - Bartpflege, Haarschnitte und mehr. Ohne Termin einfach vorbeikommen!">
+  <meta name="robots" content="index, follow" />
+  <style>
+    body {
+      margin: 0;
+      background: #1b1b1b;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    nav.top {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1b1b1b;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+    nav.top a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .footer-buttons {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #000;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 0;
+    }
+    .footer-buttons a {
+      background: #f2c400;
+      color: black;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .call-icon {
+      position: fixed;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 64px;
+      z-index: 1000;
+    }
+    .call-icon img {
+      width: 100%;
+    }
+    .hamburger {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1001;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background: #ffcc00;
+      margin: 6px 0;
+    }
+    .sidebar {
+      position: fixed;
+      left: -260px;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background: #222;
+      color: white;
+      transition: left 0.3s;
+      padding: 20px;
+      z-index: 1000;
+    }
+    .sidebar.active {
+      left: 0;
+    }
+    .sidebar a {
+      display: block;
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 30px;
+      color: #ffcc00;
+      cursor: pointer;
+    }
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 999;
+    }
+    .overlay.active {
+      display: block;
+    }
+    .gallery img {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hamburger" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="closebtn" onclick="toggleMenu()">×</div>
+  <a href="tel:+4926769513977">Kontakt</a>
+  <a href="#">Öffnungszeiten:<br>Mo–Fr: 9:00–18:30<br>Sa: 9:00–17:00</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Adresse</a>
+  <a href="blog/blog1.html">Bartpflege Tipps</a>
+  <a href="blog/blog2.html">Haarschnitt & Gesicht</a>
+  <a href="blog/blog3.html">Haare regelmäßig schneiden</a>
+  <a href="blog/blog4.html">Trends 2025</a>
+  <a href="blog/blog5.html">Pflegeprodukte Männer</a>
+</div>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<nav class="top">
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Ohne Termin</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Zum Standort</a>
+</nav>
+
+<div class="gallery" style="margin-top: 70px;">
+  <img src="img/1.png" alt="Bild 1"/><img src="img/10.png" alt="Bild 2"/><img src="img/2.png" alt="Bild 3"/><img src="img/3.png" alt="Bild 4"/><img src="img/4.png" alt="Bild 5"/><img src="img/5.png" alt="Bild 6"/><img src="img/6.png" alt="Bild 7"/><img src="img/7.png" alt="Bild 8"/><img src="img/8.png" alt="Bild 9"/><img src="img/9.png" alt="Bild 10"/>
+</div>
+
+<div class="call-icon">
+  <a href="tel:+4926769513977"><img src="img/phone-icon.png" alt="Anrufen"></a>
+</div>
+
+<div class="footer-buttons">
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Ohne Termin</a>
+  <a href="https://maps.app.goo.gl/1NYGJh7P8uey7jgHA" target="_blank">Zum Standort</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('sidebar').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+  }
+
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    const nav = document.querySelector("nav.top");
+
+    if (prevScrollpos > currentScrollPos) {
+        nav.style.top = "0";
+    } else {
+        nav.style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+</script>
+
+<!-- Google Tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4LQSVGMYKE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4LQSVGMYKE');
+</script>
+
+</body>
+</html>
