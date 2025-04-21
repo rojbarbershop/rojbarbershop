@@ -110,15 +110,3 @@
   </div>
  </body>
 </html>
-"""
-
-# Save the updated index.html
-index_file = project_dir / "index.html"
-index_file.write_text(index_html_content, encoding="utf-8")
-
-# Zip the directory
-zip_path = f"{project_dir}.zip"
-with ZipFile(zip_path, "w") as zipf:
-    zipf.write(index_file, arcname="index.html")
-
-zip_path
